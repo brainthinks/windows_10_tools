@@ -7,28 +7,38 @@ These are the things I use to make my life a little easier when I am forced to d
 
 ## New Installation Checklist
 
+* LEAVE THE ETHERNET CABLE UNPLUGGED AND WIFI DISCONNECTED!! NO NETWORKING!!
 * Run `stop_installing_games.reg` IMMEDIATELY
-* Right Click Taskbar -> Taskbar settings -> Select which icons appear on the taskbar -> Always show all
-* Install this stuff:
-    * Chrome (Firefox installations always fail for 64 bit!)
-    * 7zip
-    * Comodo Firewall (`cfw_installer_5.3.181415.1237_64.msi`)
-        * Uncheck "Install COMODO Antivirus"
-        * Choose "Firewall Only"
-        * Choose "I do not want to use COMODO SecureDNS Servers"
-        * reboot
-        * Firewall Security Level -> Custom Policy
-        * Turn off auto update
-        * Change appearance to `Windows Theme`
-    * ImgBurn
-    * ScanSnap
+* Right Click Taskbar -> Taskbar settings
+    * Taskbar location -> left
+    * Select which icons appear on the taskbar -> Always show all
+    * Combine Taskbar buttons -> Never
+    * Show taskbar on all displays -> off
+    * Search for theme
+    * Themes and Related Settings -> Colors -> Dark mode
 * Explorer -> View -> File Name Extensions
+* Install Netlimiter Firewall
+    * Turn off the limiter
+    * Turn off priorities
+    * Tools -> Options
+        * Service -> Blocker
+            * Default Blocker Action In -> Ask
+            * Default Blocker Action Out -> Ask
+        * Client -> Theme
+            * Base Color -> Dark Gray
+        * Client -> Tray Icon
+            * Select all
+* Plug in ethernet cable or connect to wifi
+* Do all windows updates, restart, repeat until up to date
+* Install this stuff:
+    * 7zip
+    * Brave Browser (Firefox installations always fail for 64 bit!)
+    * Everything search
+    * vlc
+    * vscode
 * Control Panel -> Programs and Features -> Windows Features
     * .net 3.5
     * Windows subsystem for Linux
-    * reboot
-* Settings -> Update & Security
-    * check for updates, which will install themselves automatically
     * reboot
 
 
