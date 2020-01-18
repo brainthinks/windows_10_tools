@@ -66,13 +66,25 @@ When Windows won't boot, even after you've tried the various boot options in the
 1. Find the disk you want to fix
     1. `list disk`
     1. For me, it was `disk 0`
-1. Make a note of the Volume Letter
-    1. For me, it was `C`
+1. Find the volume you want to make bootable
+    1. `sel disk 0`
+    1. `list vol`
+    1. Make a note of the Volume Letter
+        1. For me, it was `C`
 1. `exit`
 1. `cd /d C:`
 1. `bootrec /fixmbr`
 1. `bootrec /fixboot`
 1. `bootrec /rebuildbcd`
+    1. You may be prompted to select a Windows location
+    1. For me, this time, it was Windows.old
+    1. I didn't like that option, so I selected no, but no other options were available
+    1. I reran `bootrec /rebuildbcd` and selected the option it gave me by entering `Y` and pressing `Enter`
+1. `exit`
+1. Select `Turn Off Your PC`
+1. Turn your computer back on - hopefully it boots
+
+Note that I had to do this when I applied the latest Windows update (2020-01-18).  When mine rebooted the second time, I was prompted with a screen to select my operating system... pathetic, Microsoft.
 
 
 ## References
